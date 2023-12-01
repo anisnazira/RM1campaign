@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+        
+        
+    <title>RM 1 Campaign</title>
+    </head>
+    <body>
+
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="https://seeklogo.com/images/I/international-islamic-university-malaysia-logo-221DAA8603-seeklogo.com.png" alt="IIUM Logo" style="width: 70px; height: auto;">
+                        IIUM
+                    </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#kulliyyah" class="nav__link">Participation Kulliyyah</a>
+                        </li>   
+                    </ul>
+                </div> 
+        </header>
+
+   
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    
+                    <img src="donation-money-vector-flat-illustration.jpg" alt="" class="home__img"
+                    width = "100"
+                    height="100" />
+                   
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            RM1 Campaign
+                        </h1>
+                        <h4 class="home__description">
+                            Let your contributions be perpetual for the pleasure of Allah swt
+                        </h4>
+                        <br>
+                        <p class="home__quote">
+                            “The example of those who spend their wealth in the way of Allah is like a seed [of grain] which grows seven spikes; in each spike is a hundred grains. 
+                            And Allah multiplies [His reward] for whom He wills. And Allah is all-Encompassing and Knowing.” Al Baqarah:261
+                        </p>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Join Us</span>  
+                    </div>
+                </div>
+            </section>
+
+   
+             <!--==================== Participation Kulliyyah ====================-->
+             <section class="kulliyyah" id="kulliyyah">               
+                <div class="kulliyyah__container container grid">
+                    
+                    <div class="kulliyyah__container">
+                        <div class="kulliyyah__title"> Participation in RM1 Campaign <br> Salary Deduction [Kulliyyah Based]
+                        </div>
+                        <br>
+                        <form id="rm1Form" onsubmit="return validateForm()">
+                        <div class="kulliyyah__userdetails">
+                           
+                            <div class="input_box">
+                                <span class="details">Full Name</span>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="input_box">
+                                <span class="details">Staff No.</span>
+                                <input type="text" placeholder="Enter your staff no" required>
+                            </div>
+
+                            <div class="input_box">
+                                <span class="details">K/C/D/I/O</span>
+                                <input type="text"id="kulliyyah-input" placeholder="Enter your k/c/d/i/o" required>
+                            </div>
+
+                            <div class="input_box">
+                                <span class="details">Contact No.</span>
+                                <input type="text"  placeholder="Enter your contact no." required>
+                            </div>
+
+                            <div class="input_box">
+                                <span class="details">Email</span>
+                                <input type="text"  placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="input_box">
+                                <span class="details">Amount to be Deducted</span>
+                                <input type="text" placeholder="Enter amount (RM)" required>
+                            </div>
+                        </div>
+                       
+                        
+                        <div class="date_details">
+                            <span>The above salary deduction will take effect from </span>
+                            <span id="start-date"></span>
+                            <span> until </span>
+                            <span id="end-date"></span>
+                            <span> or further notice. For </span>
+                            <span id="kulliyyah-type"></span>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="kulliyyah__usersign">
+
+                          <div class="input_box signature">
+                            <span class="details">Signature</span>
+                            <input type="text" id="signature-input" placeholder="Enter your signature" required>
+                        </div>
+                        <div class="input_box date">
+                            <span class="details">Date</span>
+                            <input type="date" id="date-input" required>
+                        </div>
+                    </div>
+                        <div class="button">
+                            <input type="submit" value="Submit">
+                        </div>
+                        
+                    </form>
+               
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class=""></i>IIUM Endowment Fund
+                    </a>
+                    
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Address</h3>
+                    <ul class="footer__data">
+                        <li class="footer__information">Level 3, Rectory International Islamic University Malaysia</li>
+                        <li class="footer__information">P.O. Box 10</li>
+                        <li class="footer__information">50728 Kuala Lumpur</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Us</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">Tel: 03 6196 4268</li>      
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Social Media</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">Email : ief@iium.edu.my</li>
+
+                        <ul class="footer__data">
+                            <li class="footer__information">Website : www.ium.edu.my/ief</li>
+                            
+                            <ul class="footer__data">
+                                <li class="footer__information">Facebook: www.facebook.com/ief.official/</li>
+                    </ul>
+                </div>   
+            </div>
+             <p class="footer__copy">&#169; All right reserved</p>
+            </footer>
+        
+        <!--=============== SCROLL UP =============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+        
+
+    </body>
+</html>
